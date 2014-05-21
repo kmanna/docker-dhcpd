@@ -6,4 +6,5 @@ Run DHCPD in a docker instance and manage multiple vlans (one per container).  T
 Build Docker Image
 ------------------
 
+    $ cp dhcpd.conf.sample dhcpd.conf
     $ docker build -t=dhcpd .
