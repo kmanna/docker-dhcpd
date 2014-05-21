@@ -16,5 +16,6 @@ ADD pipework /usr/bin/pipework
 # Better to have a long cmd line here then a shells cript
 CMD pipework --wait -i eth1 && dhcpd -f eth1
 
-# Expose ports.
-EXPOSE 67/udp
+# Expose ports, exposing the port is pointeless since the dhcpd server needs
+# to run on the same subnet it's handing leases out on.
+#EXPOSE 67/udp
