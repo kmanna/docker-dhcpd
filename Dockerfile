@@ -1,8 +1,6 @@
-# Pull base image.
-FROM ubuntu:14.04
+# Pull lean base image.
+FROM debian:wheezy
 
-# Update Ubuntu
-RUN apt-get update && apt-get dist-upgrade -y
 #RUN apt-get install -y dnsmasq tcpdump
 RUN apt-get install -y isc-dhcp-server
 
